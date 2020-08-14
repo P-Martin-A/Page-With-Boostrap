@@ -1,0 +1,78 @@
+/* DROPDOWN HEADER > NAV > UL > LI > UL > LI */
+ul.dropdown-menu  li.dropdown-item{padding: .25rem;}
+
+/* DROPDOWN HEADER > NAV > UL > LI > UL > LI:FOCUS + LI:HOVER*/
+ul.dropdown-menu  li.dropdown-item:focus, ul.dropdown-menu  li.dropdown-item:hover{text-decoration: none;background-color: #f8f9fa;}
+
+/* DROPDOWN HEADER > NAV > UL > LI > UL > LI > A*/
+ul.dropdown-menu li.dropdown-item a{color: var(--white);}
+
+/* DROPDOWN HEADER > NAV > UL > LI > UL > LI > A:HOVER*/
+ul.dropdown-menu li.dropdown-item a:hover{color: var(--red);text-decoration: underline;}
+
+#hero, #about-us, #contact{height: 600px;}
+
+#singers{height: 700px;}
+
+#singers img{
+    width: 400px;
+    height: 400px;
+}
+
+/* H1 */
+h1{font-size: 6.5vw;}
+
+/* H2 */
+h2{font-size: 4.5vw;}
+
+/* H3 */
+h3{font-size: 3.5vw;}
+
+/* P */
+p{font-size: 1.5vw;}
+
+/* TABLET */
+@media screen and (max-width: 767.98px){ 
+
+    #hero, #about-us{height: 500px;}
+    
+    #singers, #contact{height: auto;}
+
+    #singers img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    h1{font-size: 7.5vw;}
+    
+    h2{font-size: 5.5vw;}
+    
+    h3{font-size: 4.5vw;}
+
+    p{font-size: 2.5vw;}
+
+    button{font-size: .8rem;}
+}
+
+/* PHONE */
+@media screen and (max-width: 575.98px){ 
+
+    #hero, #about-us{height: 400px;}
+    
+    #singers img{
+        width: 200px;
+        height: 200px;
+    }
+
+    h1{font-size: 8.5vw;}
+    
+    h2{font-size: 6.5vw;}
+    
+    h3{font-size: 5.5vw;}
+
+    p{font-size: 3.5vw;}
+
+    button{font-size: .6rem;}
+}
+
+

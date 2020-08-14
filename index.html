@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Landing Page with Bootstrap</title>
+</head>
+<body class="bg-dark">
+
+    <!-- Header -->
+    <header class="sticky-top w-100 bg-dark shadow">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+            <!-- Logo -->
+            <a href="/index.html">
+                <img href="/index.html" src="/images/logo.png" alt="Dale Q' Va" loading="lazy" class="navbar-brand">
+            </a>            
+            <!-- Button Menu -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#contenido-nav" aria-controls="contenido-nav" aria-expanded="false">
+                <!-- Icon Menu -->
+                <span class="navbar-toggler-icon"></span>                
+            </button>            
+            <!-- Barra de Navegación -->
+            <div class="navbar-collapse collapse" id="contenido-nav">
+                <!-- Lists -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Item Inicio -->
+                    <li class="nav-item">
+                        <!-- Link Inicio -->   
+                        <a href="#hero" class="nav-link active">Inicio</a>                        
+                    </li>                    
+                    <!-- Item Sobre Nosotros-->
+                    <li class="nav-item">
+                        <!-- Link Sobre Nosotros-->   
+                        <a href="#about-us" class="nav-link">Sobre Nosotros</a>                        
+                    </li>                    
+                    <!-- Item Cantantes-->
+                    <li class="nav-item dropdown">
+                        <!-- Link Cantantes-->   
+                        <a href="#" class="nav-link dropdown-toggle" id="btn-dropdown-service" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cantantes</a>                        
+                        <!-- List Cantantes-->   
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="btn-dropdown-service">
+                            <!-- Item David -->                           
+                            <li class="dropdown-item">
+                                <!-- Link DAvid -->                           
+                                <a href="#singers" class="dropdown-item-text">David Ortiz</a>                                
+                            </li>                            
+                            <!-- Item Neno-->                           
+                            <li class="dropdown-item">
+                                <!-- Link Neno-->                           
+                                <a href="#singers" class="dropdown-item-text">Neno Aguirre</a>                                
+                            </li>                            
+                        </ul>                        
+                    </li>                    
+                    <!-- Item Contactanos-->
+                    <li class="nav-item">
+                        <!-- Link Contactanos-->   
+                        <a href="#contact" class="nav-link">Contactanos</a>                        
+                    </li>                    
+                </ul>                
+            </div>            
+        </nav>        
+    </header>
+
+    <!-- Container -->
+	<div class="container-lg">
+
+        <!-- Hero -->
+        <main id="hero" class="text-center d-flex justify-content-center align-items-center flex-column">
+            <h1 class="text-white text-uppercase font-weight-bold">Dale Q' Va, Banda del genero Cuartetero</h1>            
+            <h3 class="text-white-50 text-capitalize">Para divertirse, bailar y disfrutar con está banda cuartetera que es furor en toda la República argentina.</h3>            
+            <!-- Button -->
+            <button class="btn btn-light">Contactanos</button>            
+        </main>     
+
+        <!-- Sobre Nosotros -->
+        <section id="about-us" class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-white text-uppercase">Sobre Nosotros</h2>            
+            <p class="text-white-50 text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis magnam aspernatur modi est deleniti autem soluta perspiciatis nemo? Nulla voluptatem consequatur vel illum sint, et nisi iusto architecto ad?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam numquam voluptates in nihil saepe sequi tempora dolorem possimus ipsum, officia iste velit cupiditate est totam, aliquid voluptatibus, repudiandae soluta sit.</p>            
+        </section>        
+
+        <!-- Cantantes -->
+        <section id="singers" class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-white text-uppercase">Cantantes</h2>
+            <div class="row w-100">
+                <!-- David Ortiz -->
+                <div class="col-12 col-md-6 text-center">
+                    <h4 class="text-danger mt-2">David Ortiz</h4>
+                    <img src="images/david.png" alt="David Ortiz" class="mt-2">
+                </div>
+                <!-- Neno Aguirre -->
+                <div class="col-12 col-md-6 text-center">
+                    <h4 class="text-danger mt-2">Neno Aguirre</h4>
+                    <img src="images/neno.png" alt="Neno Aguirre" class="mt-2">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="d-flex justify-content-center align-items-center">
+            <!-- Card Body -->
+            <div class="card card-body bg-dark shadow-sm">
+                <!-- Card Header -->
+                <div class="card-header mb-3 px-3 py-1 border-light">
+                    <h2 class="text-white-50">Contactanos</h2>
+                    <span class="text-white">Para que nuestra banda vaya alegrarte la fiesta.</span>
+                </div>
+                <!-- Form -->
+                <form action="#" id="form">
+                    <div class="form-row">
+                        <!-- Form Grupo Nombres y apellido-->
+                        <div class="form-group col-md-6 mb-3">
+                            <label for="names" class="text-white-50">Nombres y Apellido</label>
+                            <input type="text" class="form-control" name="names" id="names" placeholder="John Doe" required>
+                            <!-- Valido -->
+                            <div class="valid-feedback">Bien!</div>
+                            <!-- Invalido -->
+                            <div class="invalid-feedback">Completa el campo!</div>
+                        </div>
+                        <!-- Form Grupo Correo Electrónico-->
+                        <div class="form-group col-md-6 mb-3">
+                            <label for="email" class="text-white-50">Correo Electrónico</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="correo@correo.com" required>
+                            <!-- Valido -->
+                            <div class="valid-feedback">Bien!</div>
+                            <!-- Invalido -->
+                            <div class="invalid-feedback">Completa el campo!</div>
+                        </div>    
+                        <!-- Form Grupo -->
+                        <div class="form-group col-12 mb-3">
+                            <label for="coment" class="text-white-50">Comentario.</label>
+                            <textarea name="coment" id="coment" cols="15" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <button class="btn btn-outline-light" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-100 text-center border-top py-4">
+            <h6 class="font-weight-bold text-capitalize text-danger m-0">Copyright © 2020 - Todo los derechos reservados.</h6>
+        </footer>
+
+    </div>    
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- Popper.js  -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+    
+    <!-- Js Bootstrap  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- My Js -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
