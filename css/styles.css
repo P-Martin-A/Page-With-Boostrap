@@ -10,7 +10,7 @@ ul.dropdown-menu li.dropdown-item a{color: var(--white);}
 /* DROPDOWN HEADER > NAV > UL > LI > UL > LI > A:HOVER*/
 ul.dropdown-menu li.dropdown-item a:hover{color: var(--red);text-decoration: underline;}
 
-#hero, #about-us, #contact{height: 600px;}
+#hero, #about-us, #contact{height: 500px;}
 
 #singers{height: 700px;}
 
@@ -28,14 +28,13 @@ h2{font-size: 4.5vw;}
 /* H3 */
 h3{font-size: 3.2vw;}
 
-
 /* P */
 p{font-size: 1.5vw;}
 
 /* TABLET */
 @media screen and (max-width: 767.98px){ 
 
-    #hero, #about-us{height: 500px;}
+    #hero, #about-us{height: 450px;}
     
     #singers, #contact{height: auto;}
 
